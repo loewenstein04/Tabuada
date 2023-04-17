@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #f1ebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #2e2e2e;
+    transition: .5s;
+}
+
+.black {
+    background: #2e2e2e; 
+    color: #f1ebeb;
+    transition: .5s;
+}
+
+.claro {
+    height: 50px;
+    width: 50px;
+    background: url(https://s1.static.brasilescola.uol.com.br/be/2022/03/lua-cheia.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    right: 10px;
+    top: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container {
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.escuro {
+    background: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/2-sol.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+}
+
+.container-text {
+    width: 50%;
+    background: #2e2e2e;
+    padding: 5px;
+    color: #f1ebeb;
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px #2e2e2e;
+    border: 3px outset #f8f8f8;
+    transition: .5s;
+}
+
+.black .container-text {
+    box-shadow: 3px 3px 5px #fff, -3px -3px 5px #f1ebeb;
+    transition: .5s;
+}
+
+.container p {
+    margin: 1rem 0 5px 0;
+}
+
+.container input {
+    text-indent: 10px;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+-webkit-appearance: none; 
+}
+
+.container-res {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-left: thin solid black;
+}
+
+table {
+    width: 70%;
+    height: 30%;
+    background: #f8f8f8;
+    color: #2e2e2e;
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px #2e2e2e;
+    border: 3px outset #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.black .container-res table {
+    background: #2e2e2e;
+    color: #f1ebeb;
+    box-shadow: 3px 3px 5px #fff, -3px -3px 5px #f8f8f8;
+    border: 3px outset #2e2e2e;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 50px;
+    background: #2e2e2e;
+    color: #f1ebeb;
+    transition: .5s;
+}
+
+.black footer {
+    color: #2e2e2e;
+    background: #f1ebeb;
+    transition: .5s;
+}
