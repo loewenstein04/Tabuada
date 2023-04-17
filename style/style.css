@@ -84,7 +84,11 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
     height: 100%;
     display: grid;
     place-items: center;
-    border-left: thin solid black;
+    border-left: thin solid #2e2e2e;
+}
+
+.black .container {
+    border-left: thin solid #f1ebeb;
 }
 
 table {
